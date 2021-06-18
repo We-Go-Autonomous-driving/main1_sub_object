@@ -74,13 +74,13 @@ yolov4-deepsort를 사용하기 위해서는 [yolov4.weights](https://drive.goog
 --> 넥타이를 착용하고 있는 1인을 tracking 시작
 
 ## 5. 모듈 파일 설명(scout_bringup 폴더 내에 있음)
-key_move.py --> 추적 & 주행 알고리즘을 거쳐 나온 결과값(string)에 따라 속도와 방향을 변경해주는 메소드
-scout_motor_light_pub.py --> key_move.py에서 나온 결과를 ROS topic으로 발행하는 코드(모터 및 조명 제어)
-camera.py --> depth camera를 이용할 수 있게 하는 class code
-drive.py --> 입력 이미지에 대한 주행 알고리즘(depth값과 RGB값이 입력되어 전진/정지/우회전/좌회전/속도감속 등을 정한다)
-utils2.py --> 깊이값을 이용해 사람과의 거리 및 장애물 영역 측정
-Default_dist.py --> 깊이 초깃값 측정 (이를 토대로 장애물 영역의 깊이를 측정해 장애물 유무를 판단할 수 있다.)
-object_track_sub_obj.py --> 입력 이미지에 대한 추적 실시
+1. key_move.py --> 추적 & 주행 알고리즘을 거쳐 나온 결과값(string)에 따라 속도와 방향을 변경해주는 메소드  
+2. scout_motor_light_pub.py --> key_move.py에서 나온 결과를 ROS topic으로 발행하는 코드(모터 및 조명 제어)  
+3. camera.py --> depth camera를 이용할 수 있게 하는 class code  
+4. drive.py --> 입력 이미지에 대한 주행 알고리즘(depth값과 RGB값이 입력되어 전진/정지/우회전/좌회전/속도감속 등을 정한다)  
+5. utils2.py --> 깊이값을 이용해 사람과의 거리 및 장애물 영역 측정  
+6. Default_dist.py --> 깊이 초깃값 측정 (이를 토대로 장애물 영역의 깊이를 측정해 장애물 유무를 판단할 수 있다.)  
+7. object_track_sub_obj.py --> 입력 이미지에 대한 추적 실시  
 
 
 **참고** 
