@@ -99,7 +99,6 @@ catkin_ws(폴더 이름은 변경 가능)
 4. $ cd catkin_ws/src && source devel/setup/bash  
 5. $ rosrun scout_bringup object_track_sub_obj.py
 
-
 --> 넥타이를 착용하고 있는 1인을 tracking 시작
 
 ## 5. 모듈 파일 설명(scout_bringup 폴더 내에 있음)
@@ -112,7 +111,7 @@ catkin_ws(폴더 이름은 변경 가능)
 7. object_track_sub_obj.py --> 입력 이미지에 대한 추적 실시  
 
 
-**참고** 
+**참고**  
 작성된 code는 2가지 버전이 있으니 유의할 것.  
 
 현재 저장소에 작성된 코드는 main code1이며, 넥타이를 착용한 1인을 추적하는 코드이다.  
